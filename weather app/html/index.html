@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather view</title>
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/clouds.png" />
+    <!-- external css file link -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div style="margin-top: 2%; text-align: center">
+      <marquee behavior="" direction="">
+        <span style="color: red"> Weather View 24 / 7 </span>
+        <img
+          width="25px"
+          height="px"
+          src="../assets/clouds.png"
+          alt=""
+          style="margin-right: 10px"
+        />
+        Weather View Forecasting the future climate changes. With the use of
+        latitude, we can determine the probability of snow and hail reaching the
+        surface. We are able to identify the thermal energy from the sun that is
+        exposed to a region.
+      </marquee>
+    </div>
+
+    <div class="card">
+      <h3
+        style="
+          font-weight: 600;
+          text-align: left;
+          margin: 0 5px 5px;
+          text-shadow: 2px 2px black;
+        "
+      >
+        <img
+          width="30px"
+          height="px"
+          src="../assets/clouds.png"
+          alt=""
+          style="margin-right: 10px"
+        />Weather View
+      </h3>
+      <div class="search">
+        <div id="input">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter city name"
+            spellcheck="false"
+            required
+          /><button><img src="../assets/search.png" alt="" /></button>
+        </div>
+      </div>
+      <div class="error"></div>
+
+      <div class="weather">
+        <img src="../assets/rain.png" class="weather-icon" alt="" />
+        <h1 class="temp"></h1>
+        <h2 class="city">New York</h2>
+
+        <div class="details">
+          <div class="col">
+            <img src="../assets/humidity.png" alt="" />
+            <div>
+              <p class="humidity"></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../assets/wind.png" alt="" />
+            <div>
+              <p class="wind"></p>
+              <p>Wind speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="../assets/Earth from space .mp4" type="video/mp4" />
+    </video>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
